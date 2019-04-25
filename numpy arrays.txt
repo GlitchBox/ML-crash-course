@@ -1,0 +1,2 @@
+It's like a list but elements are of the same type
+np array forces every element to be of the same type. Even if only one element in the array is floating point number(and rest are ints), np array converts the whole the array in a way so that the array now contains floats.

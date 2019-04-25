@@ -32,3 +32,7 @@ dataframe.reindex[2,0,1]
 #shuffling the data
 dataframe1.reindex(np.random.permutation(dataframe1.index))
 
+#indexes can be changed from assigned numbers to anything
+index = ['xxx','xyz']
+dataframe1. = pd.DataFrame({'cities':cities, 'pop':population},index =index)
+
