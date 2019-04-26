@@ -27,3 +27,7 @@ Building model
 3)configure optimizer and the linearRegressor
 4)write a function which instructs tensorflow on how to preprocess the data, how to shuffle, make batches and repeat this process during the run time
 5) we convert pandas feature data into dict of numpy arrays, then we use Dataset API of tensor flow to convert the numpy arrays into Dataset. Then we break our dataset into batches of size batch_size
+
+#train model
+trainingResult = linear_regressor.train(
+input_fn = lambda: my_input_fn(feature1, labels), steps = 1000)

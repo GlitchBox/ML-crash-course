@@ -1,0 +1,9 @@
+
+#create an input function for predictions
+prediction_input_fn = lambda: my_input_fn(feature1, labels, num_epochs = 1, shuffle = False)
+
+predictions = linear_regressor.predict(input_fn = prediction_input_fn)
+predictions = np.array(item['predictions'][0] for item in predictions) #we have only one column, hence [0]
+
+mse = metrics.mean_squared_error(predictions, labels)
+rmse = math.sqrt(mse)

@@ -1,0 +1,1 @@
+An Epoch is one iteration over all training samples in the dataset
